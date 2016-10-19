@@ -1,0 +1,15 @@
+html
+  head
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+  body
+    include navbar
+
+    .container
+      .row
+        .col-xs-4
+          img(class="img-fluid" src=book.imageURL)
+        .col-xs-8
+          h1= book.title
+          h5 By #{book.authorName}
+          p= book.description
+          p #{book.numberOfPages} Pages

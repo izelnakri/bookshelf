@@ -1,0 +1,13 @@
+html
+  head
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+  body
+    include navbar
+
+    .container
+      .row
+        each book in books
+          .col-xs-3
+            a(href=book.permalink)
+              img(width="225" height="335" src=book.imageURL)
+              h3= book.title
