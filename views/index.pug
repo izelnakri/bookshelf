@@ -8,6 +8,6 @@ html
       .row
         each book in books
           .col-xs-3
-            a(href=book.permalink)
+            a(href="/books/" + book.slug)
               img(width="225" height="335" src=book.imageURL)
               h3= book.title
