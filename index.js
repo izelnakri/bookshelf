@@ -38,8 +38,8 @@ var dataInMemory = [
 ];
 
 function findBook(slug) {
-  // iterate through the array as soon as ('books/' + slug) is the permalink
-  // of the book in the loop return the book
+  // iterate through the slugs in the array of object
+  // if the iterated object holds the same slug as the parameter of this function return the object
   for (var i = 0; i < dataInMemory.length; i++) {
     if (dataInMemory[i].slug === slug) {
       return dataInMemory[i];
